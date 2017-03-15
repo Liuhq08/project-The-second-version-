@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>联系我们</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9DYydeQZZgdeZ0mI27txfCpV&services=&t=20151217145908"></script>
+<style type="text/css">
+	#allmap,.address{
+	    height:500px;
+	    width:500px;
+		float:left;
+    }
+	#allmap{
+		margin-left: 14px;
+		margin-top: 45px;
+	}
+	.img-thumbnail{
+		margin-top:10px;
+		border-radius:0px 0px 15px 15px;
+		transition:All 0.2s ease-in-out;
+		background-color: #FFF;
+		border: 5px solid #DDD; 
+		 
+	}
+	.opinion{
+		float:left;
+		height:440px;
+	    width:520px;
+		margin-top:45px;
+		margin-left:85px;
+		border-radius:0px 0px 15px 15px;
+		border:solid #ccc 1px;
+	}
+	.information{
+		float:left;
+		height:430px;
+	    width:520px;
+		height:150px;
+		margin-top:62px;
+		margin-left:85px;
+		border:solid #ccc 1px;
+	}
+	.opinion span{
+		margin-left: 5px;
+		color: #333;
+		
+	}
+	.fl{
+		float:left;
+	}
+	.pannle{
+		background-image:url(img/pannle.png);
+		height: 60px;
+		z-index: 10;
+		position: absolute;
+		
+	}
+	.pannle1{
+		width: 530px;
+		background-position: 0px -66px;
+		margin-top: -3px;
+	}
+	.pannle2{
+		width: 550px;
+		background-position: 0px -320px;
+		margin-top: -46px;
+		margin-left:-15px;
+	}
+	.pannle3{
+		width: 550px;
+		background-position: 0px -380px;
+		margin-top: -46px;
+		margin-left:-15px;
+	}
+	.tip{
+		padding: 5px 0px 0px 20px;
+		margin-top: -10px;
+		
+	}
+	.tip *,.address ul *{
+		display:inline-block;vertical-align:middle
+	}
+	.information ul{
+		width:420px;
+		margin: 20px auto;
+	}
+	.information ul li{
+		margin-right:50px;
+		margin-bottom: 7px;
+	}
+	.address ul li span{
+		font-weight:600;
+		margin-left:5px;
+		width:90px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		    
+	}
+	.address ul li span:hover{
+		white-space: inherit;
+		position: absolute;
+		border: solid #ccc 1px;
+		font-weight: 500;
+		background-color: #fff;
+		cursor:pointer;
+		font-size:12px;
+	}
+	.address ul li{
+		margin-left:20px;
+		margin-top:5px;
+		width:115px;
+		
+	}
+	.address ul li:last-child{
+		width:195px;
+	}
+	.address .form-control{
+		height:45px;
+		margin-top:-1px;
+	}
+	.address .btn-lg {
+    	padding: 8px 14px;
+	}
+	.footer {
+    	margin: 0px auto;
+		padding: 60px 0px 10px 30px;
+	}
+	footer{
+		background-color: #1E1B1B;
+		margin-top:20px;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="heard">
+		<div class="container">
+			<img src="img/logo.png" />
+			<div class="nav">
+				<ul>
+					<li><a href="javascript:void()"><span class="nav_clied">首页</span></a></li>
+					<li><a href="javascript:void()"><span class="nav_clied">我要参展</span></a></li>
+					<li><a href="javascript:void()"><span class="nav_clied">我要观展</span></a></li>
+					<li><a href="javascript:void()"><span class="nav_clied">活动安排</span></a></li>
+					<li><a href="javascript:void()"><span class="nav_clied">关于我们</span></a></li>
+					<li><a href="javascript:void()"><span class="nav_clied">联系我们</span></a></li>					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row address">
+			<div class="form-group" style="margin:18px 0 18px 20px;">
+					<div class="col-sm-10">
+						<input type="text" class="form-control" maxlength="100" placeholder="大中华国际交易广场" id="search" />
+					</div>
+					<div class="col-sm-offset-7">
+						<a class="btn btn-default btn-primary btn-lg " data-options="iconCls:'icon-danger'" href="javascript:search()">搜 索</a>
+					</div>
+				</div>
+			<div class="pannle pannle1"></div>
+			<div id="allmap" class="row img-thumbnail"></div>
+			<ul>
+				<li><img src="img/01.png" /><span>地铁1号线和4号线会展中心站A出口</span></li><!---->
+				<li><img src="img/02.png" /><span>大中华国际广场站：38路,60路,71路,k318路,76路区间空调,235路,64路,M390路,578路,K578路,M347路,371路,374路,398路,N9路,B686路,高峰专线17路,B612路,高峰专线19路</span></li>
+				<li><img src="img/03.png" /><strong style="margin-left:5px">搜索"大中华国际交易广场"</strong></li>
+			</ul>
+		</div>
+		<div class="information">
+			<div class="pannle pannle2"></div>
+			<ul>
+				<li>深圳市喜悦商业管理有限公司</li>
+				<li>电话：0755-23881056</li>
+				<li>传真：0755-23881038</li>
+				<li>邮箱：xy@mallxy.com</li>
+				<li>地址：深圳市福田区金田南路大中华国际交易广场东区36楼</li>
+			</ul>
+		</div>
+		<div class="opinion">
+			<div class="pannle pannle3"></div>
+			<form class="form-horizontal" style="margin-top: 25px;">  
+				<div class="form-group">
+					<label class="col-sm-3 control-label">
+						姓名：
+					</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" maxlength="100" placeholder="请填写姓名" id="SiteName" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">
+						公司：
+					</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" maxlength="100" placeholder="请填写公司" id="SiteName" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">
+						主题：
+					</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" maxlength="100" placeholder="请填写主题" id="SiteName" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">
+						电子邮箱：
+					</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" maxlength="100" placeholder="请填写电子邮箱" id="SiteName" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">
+						联系电话：
+					</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" maxlength="100" placeholder="请填写联系电话" id="SiteName" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">
+						您的信息：
+					</label>
+					<div class="col-sm-8">
+						<textarea class="form-control" maxlength="100" placeholder="请填写您的信息" id="SiteName"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-4 fl">
+						<a class="btn btn-primary btn-lg" data-options="iconCls:'icon-ok'" href="javascript:void(0)" onclick="AddSumbmit()">提 交</a>
+					</div>
+					<div class="col-sm-offset-7">
+						<a class="btn btn-danger btn-lg" data-options="iconCls:'icon-danger'" href="javascript:void(0)">重 置</a>
+					</div>
+				</div>
+				<div class="tip"><img src="img/icon-tip.png" /><span>您可以通过此表格发送信息给我们,我们将尽快回复您</span></div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<div class="container row footer">
+			<ul class="row">
+				<li><a href="javascript:void()">关于大中华<span>|</span></a></li>
+				<li><a href="javascript:void()">大中华文化艺术中心<span>|</span></a></li>
+				<li><a href="javascript:void()">大中华文化艺术节<span>|</span></a></li>
+				<li><a href="javascript:void()">组织机构<span>|</span></a></li>
+				<li><a href="javascript:void()">联系我们<span>|</span></a></li>
+				<li><a href="javascript:void()">免责声明</a></li>
+			</ul>
+			<span>Copyright&copy; 2016-2026 大中华 hkgcg.com 版权所有<span>|</span>艺术 / 生活 / 传承</span>
+			<div class="footer-about row">
+				<a class="about-title" href="javascript:void()">关注我们</a>
+				<a href="javascript:void()">联系我们(0755-23881168)</a>
+				<a href="javascript:void()">企业邮箱：xy@mallxy.com</a>
+				<a href="javascript:void()">微信公众号：<img src="img/about_footer_code.png" /></a>
+				<img class="about-weixin" src="img/weixin.png" />
+			</div>
+			
+		</div>
+	</footer>
+<script type="text/javascript">
+$(document).ready(function() {
+	var map = new BMap.Map("allmap");
+	map.centerAndZoom("深圳",13);
+	map.enableScrollWheelZoom(true);
+	map.addControl(new BMap.NavigationControl()); 
+	var local = new BMap.LocalSearch(map, {
+		renderOptions:{map: map}
+	});
+	local.search("大中华国际交易广场");
+	search = function(){
+		var address = $("#search").val();
+		local.search(address);
+	}
+})
+</script>
+</body>
+</html>

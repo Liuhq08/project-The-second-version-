@@ -1,0 +1,84 @@
+@charset "utf-8";
+	* {margin:0; padding:0;}
+	* html body {overflow:visible;}
+	* html iframe, * html frame {overflow:auto;}
+	* html frameset {overflow:hidden;}
+	body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, tr {margin:0 auto; padding:0;}
+	input, select {font-size:12px; vertical-align:middle;}
+	.container{
+		min-width:980px;
+	}
+	ul{
+		padding:0px;
+		margin-left: 15px;
+		padding-top: 8px;
+	}
+	ul li{
+		list-style-type:none;
+		float:left;
+		border-radius:5px;
+	}
+	em, i {
+    		font-style: normal;
+	}
+	a{display:block;color:#474E5D;}
+	a:link{text-decoration:none;}
+	a:focus {outline:none;}
+	header{
+		background-color:#fff;
+		padding:15px 0 10px 0;
+		border-bottom: solid 1px #ccc;
+	}
+	.nav{
+		float:right;
+	}
+	.nav li a{
+		margin: 0px 5px;
+		font-size: 16px;
+		border: 1px solid rgba(0,0,0,0);
+		padding: 5px 15px;
+	}
+	.nav li a:hover{
+		border-color:#E6E6E6;
+		border-radius:5px;
+		color:#181B23;
+	}
+	a:hover{
+	color:#181B23;
+	}
+	.footer{
+		padding: 60px 0px 0px 30px;
+		margin: 0 auto 30px;
+		font-size:12px;
+	}
+	.footer ul li a{
+		color:#fff;
+		padding: 5px;
+		margin-bottom: 8px;
+	}
+	.footer span{
+		margin: 0px 15px;
+		color:#fff;
+	}
+	.footer-about{
+		position:relative;
+		float:right;
+		border-left: solid #b1a2a2 1px;
+		padding-left: 30px;
+		height: 130px;
+		margin-top: -52px;
+	}
+	.footer-about a{
+		color: #DDD;
+		padding-bottom: 10px;
+	}
+	.footer-about .about-title{
+		font-size: 16px;
+		color: #DDD;
+		padding: 15px 0px;
+	}
+	.about-weixin{
+		position: absolute;
+		right: 10px;
+		bottom: 0px;
+	}

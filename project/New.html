@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>联系我们</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9DYydeQZZgdeZ0mI27txfCpV&services=&t=20151217145908"></script>
+<style type="text/css">
+	.information{
+		padding: 40px 40px 60px;
+	}
+	.icon{
+		display:block;
+		background-image:url(img/ICON.png);
+		z-index: 10;
+		position: absolute;
+		width: 52px;
+		background-position: 0px 0px;
+		height: 50px;	
+	}
+	.title{
+		font-weight:600;
+		display:block;
+		margin-left:70px;
+		margin-top: 8px;
+	}
+	.content{
+		margin-left: 70px;
+		font-size: 12px;
+		color: rgb(107, 103, 103);
+		margin-top: 5px;
+	}
+	.email{
+		background-position:-96px 0px;
+	}
+	.phone{
+		background-position: -201px 0px;
+	}
+	.content-icon{
+		margin-left:25px;
+	}
+	.last-icon{
+		margin-left:60px;
+	}
+	#allmap,.address{
+	    height:500px;
+		float:left;
+    }
+	.opinion{
+		background-color: #EfEfEf;
+	}
+	.btn{
+		padding: 5px 50px;
+		margin-left: 17px;
+	}
+	.form-group {
+    	margin-bottom: 30px;
+		color:#3E3E3E;
+	}
+	.tip{
+		font-size: 18px;
+		font-weight: 600;
+		padding: 36px 40px;
+		display: block;
+		margin-bottom:20px;
+	}
+	.footer {
+    	margin: 0px auto;
+		padding: 60px 0px 10px 30px;
+	}
+	footer{
+		background-color: #1E1B1B;
+		margin-top:20px;
+	}
+</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<a href="javascript:;" class="logoimg"><img src="img/logo.png" /></a>
+				</div>
+				<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8 nav" >
+					<ul>
+						<li><a href="index.html"><span class="nav_clied">首页</span></a></li>
+						<li><a href="exhibition.html"><span class="nav_clied">我要参展</span></a></li>
+						<li><a href="visit.html"><span class="nav_clied">我要观展</span></a></li>
+						<li><a href="javascript:void()"><span class="nav_clied">活动安排</span></a></li>
+						<li><a href="about.html"><span class="nav_clied">关于我们</span></a></li>
+						<li><a href="New.html"><span class="nav_clied">联系我们</span></a></li>					
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  information">
+				<ul>
+					<li class="col-lg-5 col-md-5 col-sm-5">
+						<ul>
+							<li ><span class="icon"></span></li>
+							<li class="title">ADDRESS</li><br />
+							<li class="content">深圳福田区金田南路大中华国际交易广场东区36楼</li>
+						</ul>
+					</li>
+					<li class="col-lg-3 col-md-3 col-sm-3 content-icon">
+						<ul>
+							<li class="icon email col-lg-7 col-md-8 col-sm-8"></li>
+							<li class="title">EMAIL</li><br />
+							<li class="content">xy@mallxy.com</li>
+						</ul>
+					</li>
+					<li class="col-lg-3 col-md-2 col-sm-2 last-icon">
+						<ul>
+							<li class="icon phone"></li>
+							<li class="title">PHONE</li><br />
+							<li class="content">0755-23881056</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 opinion">
+				<div id="allmap" class="row col-lg-6 col-md-6 col-sm-6 col-xs-6 img-thumbnail"></div>
+				<form class="form-horizontal  col-lg-6 col-md-6 col-sm-6 col-xs-6" style="float: right;"> 
+					<span class="tip">意见反馈</span>
+					<div class="form-group">
+						<label class="col-lg-3 col-md-3 col-sm-3 control-label">
+							您的姓名：
+						</label>
+						<div class="col-lg-7 col-md-7 col-sm-7">
+							<input type="text" class="form-control" maxlength="100" placeholder="请填写姓名" id="SiteName" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-lg-3 col-md-3 col-sm-3 control-label">
+							电子邮箱：
+						</label>
+						<div class="col-lg-7 col-md-7 col-sm-7 ">
+							<input type="text" class="form-control" maxlength="100" placeholder="请填写电子邮箱" id="SiteName" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-lg-3 col-md-3 col-sm-3 control-label">
+							联系电话：
+						</label>
+						<div class="col-lg-7 col-md-7 col-sm-7 ">
+							<input type="text" class="form-control" maxlength="100" placeholder="请填写联系电话" id="SiteName" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-lg-3 col-md-3 col-sm-3 control-label">
+							您的信息：
+						</label>
+						<div class="col-lg-7 col-md-7 col-sm-7 ">
+							<textarea class="form-control" maxlength="100" placeholder="请填写您的信息" id="SiteName"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-3 fl">
+							<a class="btn btn-primary" data-options="iconCls:'icon-ok'" href="javascript:void(0)" onclick="AddSumbmit()">提 交</a>
+						</div>
+					</div>
+			</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container row footer">
+			<ul class="row">
+				<li><a href="javascript:void()">关于大中华<span>|</span></a></li>
+				<li><a href="javascript:void()">大中华文化艺术中心<span>|</span></a></li>
+				<li><a href="javascript:void()">大中华文化艺术节<span>|</span></a></li>
+				<li><a href="javascript:void()">组织机构<span>|</span></a></li>
+				<li><a href="javascript:void()">联系我们<span>|</span></a></li>
+				<li><a href="javascript:void()">免责声明</a></li>
+			</ul>
+			<span>Copyright&copy; 2016-2026 大中华 hkgcg.com 版权所有<span>|</span>艺术 / 生活 / 传承</span>
+			<div class="footer-about col-lg-4 col-md-4 col-sm-4">
+				<a class="about-title" href="javascript:void()">关注我们</a>
+				<a href="javascript:void()">联系我们(0755-23881168)</a>
+				<a href="javascript:void()">企业邮箱：xy@mallxy.com</a>
+				<a href="javascript:void()">微信公众号：<img src="img/about_footer_code.png" /></a>
+				<img class="about-weixin" src="img/weixin.png" />
+			</div>
+			
+		</div>
+	</footer>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var map = new BMap.Map("allmap");
+		map.centerAndZoom("深圳",13);
+		map.enableScrollWheelZoom(true);
+		map.addControl(new BMap.NavigationControl()); 
+		var local = new BMap.LocalSearch(map, {
+			renderOptions:{map: map}
+		});
+		local.search("大中华国际交易广场");
+		search = function(){
+			var address = $("#search").val();
+			local.search(address);
+		}
+	})
+</script>
+</body>
+</html>

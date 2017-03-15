@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<title>无标题文档</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" />
+<link href="css/lc_switch.css" rel="stylesheet" />
+<script src="js/jquery.min.js"></script>
+<script src="js/lc_switch.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<style type="text/css">
+body, html {
+    font-family: 'Arial','\5FAE\8F6F\96C5\9ED1',Arial,'Hiragino Sans GB','\5B8B\4F53';
+    font-size: 14px;
+    color: #5e5e5e;
+}
+
+.title{
+	line-height: 70px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+}
+.visit .CN ,.visit .EN{display:none}
+.visit li {
+    line-height: 32px;
+    color: #666;
+	float:none;
+}
+.visit input {
+    margin:0px 7px 0 0;
+}
+.visit ul li span{
+	vertical-align: middle;
+}
+.visit ul li  .text_input {
+    border: 1px solid #ccc;
+	height: 27px;
+	line-height: 23px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	width: 200px;
+	margin-left: 15px;
+	padding-left: 7px;
+}
+.tip_wz {
+    color: #026fda;
+}
+.btn-default {
+    color: #fff;
+	background-color: #424f63;
+	border-color: #424f63;
+	margin: 200px 0px 0px 200px;
+}
+.EN .btn-default{
+	margin-top:275px
+}
+.btn-group-lg > .btn, .btn-lg {
+    padding: 7px 30px;
+    font-size: 16px;
+}
+.btn-default:hover{
+	background-color: #2e3644;
+	color:#fff;
+	border-color: #2e3644;
+}
+.personal span{
+	display:block;
+	float: left;
+	width: 70px;
+}
+.visit .block{
+	display:block;
+}
+.switch{
+	right: 117px;
+	position: absolute;
+	top: 23px;
+}
+.footer {
+    	margin: 0px auto;
+		padding: 30px 0px 10px 30px;
+	}
+	footer{
+		background-color: #1E1B1B;
+		margin-top:20px;
+	}
+</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<a href="javascript:;" class="logoimg"><img src="img/logo.png" /></a>
+				</div>
+				<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8 nav" >
+					<ul>
+						<li><a href="index.html"><span class="nav_clied">首页</span></a></li>
+						<li><a href="exhibition.html"><span class="nav_clied">我要参展</span></a></li>
+						<li><a href="visit.html"><span class="nav_clied">我要观展</span></a></li>
+						<li><a href="javascript:void()"><span class="nav_clied">活动安排</span></a></li>
+						<li><a href="about.html"><span class="nav_clied">关于我们</span></a></li>
+						<li><a href="New.html"><span class="nav_clied">联系我们</span></a></li>					
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<img src="img/5.jpg" />
+	<div class="container">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 visit " >
+		<span class="switch"><input type="checkbox" name="check-3" value="6" class="lcs_check lcs_tt1" checked="checked" autocomplete="off" /></span>
+		<div class="row CN block">
+			<div class="title">观众登记表</div>
+			<div class="content">
+				<div class="col-lg-4 col-md-3 col-sm-3 col-xs-3 row">
+					<ul class="a">
+						<li><div>1.您是不是第一次参观本展会？</div></li>
+						<li style="float:left; margin-right:70px"><input name="" value="" type="checkbox"><span>是</span></li>
+						<li><input name="" value="" type="checkbox"><span>否</span></li>
+					</ul>
+					<ul>
+						<li><div>4.您希望看到哪些展品？<i class="tip_wz">【多选】</i></div></li>
+						<li><input  type="checkbox"><span>书画</span></li>
+						<li><input  type="checkbox"><span>陶瓷</span></li>
+						<li><input type="checkbox"><span>油画</span></li>
+						<li><input  type="checkbox"><span>现当代艺术</span></li>
+						<li><input  type="checkbox"><span>古玩杂项</span></li>
+						<li><input  type="checkbox"><span>珠宝玉石</span></li>
+						<li><input type="checkbox"><span>其他</span><input class="text_input" type="text"></li>
+					</ul>
+					
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+					<ul>
+						<li><div>2.您是通过什么途径了解此次展会？<i class="tip_wz">【多选】</i></div></li>
+						<li><input  type="checkbox"><span>展会宣传资料</span></li>
+						<li><input  type="checkbox"><span>报纸、电视</span></li>
+						<li><input type="checkbox"><span>网络、官方网站</span></li>
+						<li><input  type="checkbox"><span>微信公众号</span></li>
+						<li><input  type="checkbox"><span>微信朋友圈</span></li>
+						<li><input  type="checkbox"><span>LED、户外广告</span></li>
+						<li><input type="checkbox"><span>其他</span><input class="text_input" type="text"></li>
+					</ul>
+					<ul>
+						<li><div>3.您的参观目的是什么？<i class="tip_wz">【多选】</i></div></li>
+						<li><input  type="checkbox"><span>获取市场信息</span></li>
+						<li><input  type="checkbox"><span>寻求合作投资</span></li>
+						<li><input type="checkbox"><span>采购作品</span></li>
+						<li><input  type="checkbox"><span>意向投资</span></li>
+						<li><input type="checkbox"><span>其他</span><input class="text_input" type="text"></li>
+					</ul>
+					
+				</div>
+				<div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 ">
+					<ul>
+						<li><div style="font-weight: 600;">个人资料</div></li>
+						
+						<li><span>您的姓名：</span><input class="text_input" style="width: 110px;margin-right: 10px;" type="text"><input type="checkbox"><span>男</span>
+						<input style="margin-left: 10px;" type="checkbox"><span>女</span></li>
+						<li><span>您的电话：</span><input class="text_input" type="text"></li>
+						<li><span>单位名称：</span><input class="text_input" type="text"></li>
+						<li><span>单位职务：</span><input class="text_input" type="text"></li>
+						<li><span>单位地址：</span><input class="text_input" type="text"></li>
+						<li><span>电子邮箱：</span><input class="text_input" type="text"></li>
+					</ul>
+					<a class="btn btn-default btn-lg" data-options="iconCls:'icon-ok'" href="javascript:void(0)" onclick="AddSumbmit()">提 交</a>
+						
+					</div>
+				</div>
+				
+			</div>
+			</div>
+			
+			
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 visit ">
+			<div class="row EN">
+			<div class="title">Registration Form</div>
+			<div class="content">
+				<div class="col-lg-4 col-md-3 col-sm-3 col-xs-3 row">
+					<ul>
+						<li><div>1.Is this your first time to visit this show？</div></li>
+						<li style="float:left; margin-right:70px"><input name="" value="" type="checkbox"><span>Yes</span></li>
+						<li><input name="" value="" type="checkbox"><span>Not</span></li>
+					</ul>
+					<ul>
+						<li><div>4.What kind of collection do you want to see here？<i class="tip_wz">【Multiple choices】</i></div></li>
+						<li><input  type="checkbox"><span>Painting</span></li>
+						<li><input  type="checkbox"><span>Ceramic</span></li>
+						<li><input type="checkbox"><span>Oil Painting</span></li>
+						<li><input  type="checkbox"><span>Contemporary Art</span></li>
+						<li><input  type="checkbox"><span>Antique Collection</span></li>
+						<li><input  type="checkbox"><span>Jewelry</span></li>
+						<li><input type="checkbox"><span>Others</span><input class="text_input" type="text"></li>
+					</ul>
+					
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+					<ul>
+						<li><div>2.What kind of channel do you get our information？<i class="tip_wz">【Multiple choices】</i></div></li>
+						<li><input  type="checkbox"><span>Catalogue</span></li>
+						<li><input  type="checkbox"><span>Newspaper、TV</span></li>
+						<li><input type="checkbox"><span>Internet、Official Website</span></li>
+						<li><input  type="checkbox"><span>Wechat Official Account</span></li>
+						<li><input  type="checkbox"><span>Friend Circle</span></li>
+						<li><input  type="checkbox"><span>LED Ads、Outdoor Ads</span></li>
+						<li><input type="checkbox"><span>Others</span><input class="text_input" type="text"></li>
+					</ul>
+					<ul>
+						<li><div>3.What's your purpose to come here？<i class="tip_wz">【Multiple choices】</i></div></li>
+						<li><input  type="checkbox"><span>Acquire Marketing Information</span></li>
+						<li><input  type="checkbox"><span>Develope Cooperation</span></li>
+						<li><input type="checkbox"><span>Purchasing</span></li>
+						<li><input  type="checkbox"><span>Seek Investment</span></li>
+						<li><input type="checkbox"><span>Others</span><input class="text_input" type="text"></li>
+					</ul>
+					
+				</div>
+				<div class="col-lg-4 col-md-5 col-sm-5 col-xs-5  personal">
+					<ul>
+						<li><div style="font-weight: 600;">personal data</div></li>
+						<li><span>Name：</span><input class="text_input" style="width: 110px;margin-right: 5px;" type="text"><input type="checkbox"><i>Male</i>
+						<input style="	margin-left: 5px;" type="checkbox"><i>Female</i></li>
+						<li><span>Tel：</span><input class="text_input" type="text"></li>
+						<li><span>Company：</span><input class="text_input" type="text"></li>
+						<li><span>Title：</span><input class="text_input" type="text"></li>
+						<li><span>Address：</span><input class="text_input" type="text"></li>
+						<li><span>E-mail：</span><input class="text_input" type="text"></li>
+					</ul>
+					<a class="btn btn-default btn-lg" data-options="iconCls:'icon-ok'" href="javascript:void(0)" onclick="AddSumbmit()">Submit</a>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container row footer">
+			<ul class="row">
+				<li><a href="javascript:void()">关于大中华<span>|</span></a></li>
+				<li><a href="javascript:void()">大中华文化艺术中心<span>|</span></a></li>
+				<li><a href="javascript:void()">大中华文化艺术节<span>|</span></a></li>
+				<li><a href="javascript:void()">组织机构<span>|</span></a></li>
+				<li><a href="javascript:void()">联系我们<span>|</span></a></li>
+				<li><a href="javascript:void()">免责声明</a></li>
+			</ul>
+			<span>Copyright&copy; 2016-2026 大中华 hkgcg.com 版权所有<span>|</span>艺术 / 生活 / 传承</span>
+			<div class="footer-about col-lg-4 col-md-4 col-sm-4">
+				<a class="about-title" href="javascript:void()">关注我们</a>
+				<a href="javascript:void()">联系我们(0755-23881168)</a>
+				<a href="javascript:void()">企业邮箱：xy@mallxy.com</a>
+				<a href="javascript:void()">微信公众号：<img src="img/about_footer_code.png" /></a>
+				<img class="about-weixin" src="img/weixin.png" />
+			</div>
+			
+		</div>
+	</footer>
+	<script type="text/javascript">
+	$(document).ready(function(e) {
+		$('.switch input').lc_switch("中文","English");
+		$(".a li input[type=checkbox]").click(function(){
+			$(".a li ").find("input[type=checkbox]").attr("checked",false);
+			$(this).attr('checked','true');
+			/* if($(this).attr("checked")==undefined)
+			{
+				$(this).attr("checked",false);
+				$(this).siblings().removeAttr('checked');
+			} */
+		});  
+	});
+</script>
+</body>
+</html>
